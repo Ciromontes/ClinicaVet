@@ -130,31 +130,21 @@
         </div>
     </section>
 
-   <!-- Servicios destacados - Implementación con carrusel -->
-<section class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">Nuestros Servicios</h2>
-            <p class="lead">Ofrecemos una amplia gama de servicios veterinarios para mantener a tu mascota saludable y feliz.</p>
-        </div>
-        
-        <!-- Carrusel de servicios para móviles y tablets -->
-        <div id="serviciosCarrusel" class="carousel slide d-md-none" data-bs-ride="carousel">
-            <!-- Indicadores del carrusel -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#serviciosCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Consulta General"></button>
-                <button type="button" data-bs-target="#serviciosCarrusel" data-bs-slide-to="1" aria-label="Vacunación"></button>
-                <button type="button" data-bs-target="#serviciosCarrusel" data-bs-slide-to="2" aria-label="Cirugía"></button>
-                <button type="button" data-bs-target="#serviciosCarrusel" data-bs-slide-to="3" aria-label="Laboratorio"></button>
+    <!-- Servicios destacados -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Nuestros Servicios</h2>
+                <p class="lead">Ofrecemos una amplia gama de servicios veterinarios para mantener a tu mascota saludable y feliz.</p>
             </div>
             
-            <!-- Contenido del carrusel -->
-            <div class="carousel-inner">
+            <div class="row g-4">
                 <!-- Consulta general -->
-                <div class="carousel-item active">
-                    <div class="card h-100 border-0 shadow-sm mx-3">
-                        <!-- Imagen de consulta general -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
                         <img src="img/servicio-consulta.jpg" alt="Consulta veterinaria" class="card-img-top" style="height: 200px; object-fit: cover;">
+
+                        </div>
                         <div class="card-body p-4">
                             <h3 class="card-title h5">Consulta General</h3>
                             <p class="card-text">Examen físico completo, diagnóstico y tratamiento para mantener la salud de tu mascota.</p>
@@ -164,10 +154,11 @@
                 </div>
                 
                 <!-- Vacunación -->
-                <div class="carousel-item">
-                    <div class="card h-100 border-0 shadow-sm mx-3">
-                        <!-- Imagen de vacunación -->
-                        <img src="img/servicio-vacunacion.jpg" alt="Vacunación de mascota" class="card-img-top" style="height: 200px; object-fit: cover;">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="img-placeholder card-img-top">
+                            <p class="text-center py-5">Imagen: Vacunación</p>
+                        </div>
                         <div class="card-body p-4">
                             <h3 class="card-title h5">Vacunación</h3>
                             <p class="card-text">Programas de vacunación personalizados para proteger a tu mascota contra enfermedades comunes.</p>
@@ -177,10 +168,10 @@
                 </div>
                 
                 <!-- Cirugía -->
-                <div class="carousel-item">
-                    <div class="card h-100 border-0 shadow-sm mx-3">
-                        <!-- Imagen de cirugía -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
                         <img src="img/servicio-cirugia.jpg" alt="Cirugía veterinaria" class="card-img-top" style="height: 200px; object-fit: cover;">
+
                         <div class="card-body p-4">
                             <h3 class="card-title h5">Cirugía</h3>
                             <p class="card-text">Procedimientos quirúrgicos realizados por veterinarios especializados en un entorno seguro.</p>
@@ -190,10 +181,11 @@
                 </div>
                 
                 <!-- Laboratorio -->
-                <div class="carousel-item">
-                    <div class="card h-100 border-0 shadow-sm mx-3">
-                        <!-- Imagen de laboratorio -->
-                        <img src="img/servicio-laboratorio.jpg" alt="Laboratorio veterinario" class="card-img-top" style="height: 200px; object-fit: cover;">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="img-placeholder card-img-top">
+                            <p class="text-center py-5">Imagen: Laboratorio</p>
+                        </div>
                         <div class="card-body p-4">
                             <h3 class="card-title h5">Laboratorio</h3>
                             <p class="card-text">Análisis clínicos y diagnósticos precisos para detectar y tratar enfermedades a tiempo.</p>
@@ -203,79 +195,13 @@
                 </div>
             </div>
             
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#serviciosCarrusel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#serviciosCarrusel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-        </div>
-        
-        <!-- Vista en grid para pantallas medianas y grandes -->
-        <div class="row g-4 d-none d-md-flex">
-            <!-- Consulta general -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 border-0 shadow-sm">
-                    <!-- Imagen de consulta general -->
-                    <img src="img/servicio-consulta.jpg" alt="Consulta veterinaria" class="card-img-top" style="height: 200px; object-fit: cover;">
-                    <div class="card-body p-4">
-                        <h3 class="card-title h5">Consulta General</h3>
-                        <p class="card-text">Examen físico completo, diagnóstico y tratamiento para mantener la salud de tu mascota.</p>
-                        <a href="servicios.html" class="btn btn-outline-primary mt-2">Más Información</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Vacunación -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 border-0 shadow-sm">
-                    <!-- Imagen de vacunación -->
-                    <img src="img/servicio-vacunacion.jpg" alt="Vacunación de mascota" class="card-img-top" style="height: 200px; object-fit: cover;">
-                    <div class="card-body p-4">
-                        <h3 class="card-title h5">Vacunación</h3>
-                        <p class="card-text">Programas de vacunación personalizados para proteger a tu mascota contra enfermedades comunes.</p>
-                        <a href="servicios.html" class="btn btn-outline-primary mt-2">Más Información</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Cirugía -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 border-0 shadow-sm">
-                    <!-- Imagen de cirugía -->
-                    <img src="img/servicio-cirugia.jpg" alt="Cirugía veterinaria" class="card-img-top" style="height: 200px; object-fit: cover;">
-                    <div class="card-body p-4">
-                        <h3 class="card-title h5">Cirugía</h3>
-                        <p class="card-text">Procedimientos quirúrgicos realizados por veterinarios especializados en un entorno seguro.</p>
-                        <a href="servicios.html" class="btn btn-outline-primary mt-2">Más Información</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Laboratorio -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 border-0 shadow-sm">
-                    <!-- Imagen de laboratorio -->
-                    <img src="img/servicio-laboratorio.jpg" alt="Laboratorio veterinario" class="card-img-top" style="height: 200px; object-fit: cover;">
-                    <div class="card-body p-4">
-                        <h3 class="card-title h5">Laboratorio</h3>
-                        <p class="card-text">Análisis clínicos y diagnósticos precisos para detectar y tratar enfermedades a tiempo.</p>
-                        <a href="servicios.html" class="btn btn-outline-primary mt-2">Más Información</a>
-                    </div>
-                </div>
+            <div class="text-center mt-5">
+                <a href="servicios.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-plus-circle me-2"></i>Ver Todos los Servicios
+                </a>
             </div>
         </div>
-        
-        <div class="text-center mt-5">
-            <a href="servicios.html" class="btn btn-primary btn-lg">
-                <i class="fas fa-plus-circle me-2"></i>Ver Todos los Servicios
-            </a>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Sección de citas -->
     <section class="py-5 bg-primary text-white">
