@@ -1,0 +1,219 @@
+&lt;!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria PetCare - Inventario</title>
+    &lt;!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    &lt;!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    &lt;!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    &lt;!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-paw me-2"></i>PetCare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sistema
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="registro-mascota.html">Registro de Mascota</a></li>
+                            <li><a class="dropdown-item" href="historial-medico.html">Historial Médico</a></li>
+                            <li><a class="dropdown-item active" href="inventario.html">Inventario</a></li>
+                            <li><a class="dropdown-item" href="pagos.html">Pagos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light btn-sm ms-lg-2 px-3" href="citas.html">Agendar Cita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-user me-1"></i>Iniciar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    &lt;!-- Encabezado de página -->
+    <header class="bg-light py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Inventario</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-5 fw-bold">Gestión de Inventario</h1>
+                    <p class="lead">Administra el inventario de medicamentos, alimentos y suministros de la clínica.</p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="img-placeholder rounded shadow">
+                        <p class="text-center py-5">Imagen: Estantería de medicamentos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    &lt;!-- Panel de control -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row g-4">
+                &lt;!-- Resumen de inventario -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm dashboard-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-muted mb-1">Total de Productos</h6>
+                                    <h3 class="mb-0">248</h3>
+                                </div>
+                                <div class="icon-box">
+                                    <i class="fas fa-box fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                &lt;!-- Productos con stock bajo -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm dashboard-card" style="border-left-color: #ffc107 !important;">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-muted mb-1">Stock Bajo</h6>
+                                    <h3 class="mb-0">15</h3>
+                                </div>
+                                <div class="icon-box" style="background-color: rgba(255, 193, 7, 0.1);">
+                                    <i class="fas fa-exclamation-triangle fa-2x text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                &lt;!-- Productos agotados -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card border-0 shadow-sm dashboard-card" style="border-left-color: #dc3545 !important;">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-muted mb-1">Agotados</h6>
+                                    <h3 class="mb-0">5</h3>
+                                </div>
+                                <div class="icon-box" style="background-color: rgba(220, 53, 69, 0.1);">
+                                    <i class="fas fa-times-circle fa-2x text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                &lt;!--
+```### Corrección y Creación de Interfaces para Clínica Veterinaria
+
+Voy a corregir los menús de navegación en los archivos existentes y crear las interfaces faltantes manteniendo el mismo diseño.
+
+## 1. Corrección del Menú de Navegación
+
+Primero, voy a actualizar el menú de navegación en todos los archivos existentes para que incluya enlaces a todas las páginas del sistema.
+
+```html project="Clínica Veterinaria" file="index.html" type="html"
+&lt;!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria PetCare - Inicio</title>
+    &lt;!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    &lt;!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    &lt;!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    &lt;!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-paw me-2"></i>PetCare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sistema
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="registro-mascota.html">Registro de Mascota</a></li>
+                            <li><a class="dropdown-item" href="historial-medico.html">Historial Médico</a></li>
+                            <li><a class="dropdown-item" href="inventario.html">Inventario</a></li>
+                            <li><a class="dropdown-item" href="pagos.html">Pagos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light btn-sm ms-lg-2 px-3" href="citas.html">Agendar Cita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-user me-1"></i>Iniciar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    &lt;!-- El resto del contenido de index.html permanece igual -->
+    &lt;!-- ... -->
+
+    &lt;!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    &lt;!-- Scripts personalizados -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
