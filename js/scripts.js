@@ -102,4 +102,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 2000);
         });
     }
-});
+
+    //modo oscuro - boton
+    document.getElementById("modoOscuro").addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode"); 
+    });
+})
