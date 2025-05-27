@@ -1,65 +1,67 @@
-&lt;!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Veterinaria PetCare - Agendar Cita</title>
-    &lt;!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    &lt;!-- Estilos personalizados -->
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="css/styles.css">
-    &lt;!-- Font Awesome -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    &lt;!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-paw me-2"></i>PetCare
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Sistema
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="registro-mascota.html">Registro de Mascota</a></li>
-                            <li><a class="dropdown-item" href="historial-medico.html">Historial Médico</a></li>
-                            <li><a class="dropdown-item" href="inventario.html">Inventario</a></li>
-                            <li><a class="dropdown-item" href="pagos.html">Pagos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active btn btn-outline-light btn-sm ms-lg-2 px-3" aria-current="page" href="citas.html">Agendar Cita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">
-                            <i class="fas fa-user me-1"></i>Iniciar Sesión
-                        </a>
-                    </li>
-                </ul>
+    <!-- Barra de navegación -->
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <i class="fas fa-paw me-2"></i> <span>PetCare</span>
+                </a>
             </div>
-        </div>
-    </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sistema
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="registro-mascota.html">Registro de Mascota</a></li>
+                                <li><a class="dropdown-item" href="historial-medico.html">Historial Médico</a></li>
+                                <li><a class="dropdown-item" href="inventario.html">Inventario</a></li>
+                                <li><a class="dropdown-item" href="pagos.html">Pagos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-dark btn-sm ms-lg-2 px-3" href="citas.html">Agendar Cita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">
+                                <i class="fas fa-user me-1"></i>Iniciar Sesión
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    &lt;!-- Encabezado de página -->
+    <!-- Encabezado de página -->
     <header class="bg-light py-5">
         <div class="container">
             <div class="row align-items-center">
@@ -68,19 +70,17 @@
                     <p class="lead">Programa una cita para tu mascota de manera rápida y sencilla.</p>
                 </div>
                 <div class="col-lg-6">
-                    <div class="img-placeholder rounded shadow">
-                        <p class="text-center py-5">Imagen: Mascota en consulta</p>
-                    </div>
+                    <img src="img/agenda-citas.jpg" alt="Agendamiento de citas veterinarias" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
     </header>
 
-    &lt;!-- Formulario de citas -->
+    <!-- Formulario de citas -->
     <section class="py-5">
         <div class="container">
             <div class="row">
-                &lt;!-- Información sobre citas -->
+                <!-- Información sobre citas -->
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <div class="card border-0 shadow-sm h-100">
                         <div class="card-body p-4">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 
-                &lt;!-- Formulario -->
+                <!-- Formulario -->
                 <div class="col-lg-8">
                     <div class="card border-0 shadow-sm">
                         <div class="card-body p-4">
@@ -161,47 +161,47 @@
                             
                             <form id="appointmentForm">
                                 <div class="row g-3">
-                                    &lt;!-- Datos del dueño -->
+                                    <!-- Datos del dueño -->
                                     <div class="col-12">
                                         <h3 class="h5 mb-3">Datos del Propietario</h3>
                                     </div>
                                     
-                                    &lt;!-- Nombre -->
+                                    <!-- Nombre -->
                                     <div class="col-md-6">
                                         <label for="nombreDueno" class="form-label required-field">Nombre</label>
                                         <input type="text" class="form-control" id="nombreDueno" required>
                                     </div>
                                     
-                                    &lt;!-- Apellido -->
+                                   <!-- Apellido -->
                                     <div class="col-md-6">
                                         <label for="apellidoDueno" class="form-label required-field">Apellido</label>
                                         <input type="text" class="form-control" id="apellidoDueno" required>
                                     </div>
                                     
-                                    &lt;!-- Email -->
+                                    <!-- Email -->
                                     <div class="col-md-6">
                                         <label for="emailDueno" class="form-label required-field">Email</label>
                                         <input type="email" class="form-control" id="emailDueno" required>
                                     </div>
                                     
-                                    &lt;!-- Teléfono -->
+                                    <!-- Teléfono -->
                                     <div class="col-md-6">
                                         <label for="telefonoDueno" class="form-label required-field">Teléfono</label>
                                         <input type="tel" class="form-control" id="telefonoDueno" required>
                                     </div>
                                     
-                                    &lt;!-- Datos de la mascota -->
+                                    <!-- Datos de la mascota -->
                                     <div class="col-12 mt-4">
                                         <h3 class="h5 mb-3">Datos de la Mascota</h3>
                                     </div>
                                     
-                                    &lt;!-- Nombre de la mascota -->
+                                    <!-- Nombre de la mascota -->
                                     <div class="col-md-6">
                                         <label for="nombreMascota" class="form-label required-field">Nombre de la mascota</label>
                                         <input type="text" class="form-control" id="nombreMascota" required>
                                     </div>
                                     
-                                    &lt;!-- Especie -->
+                                    <!-- Especie -->
                                     <div class="col-md-6">
                                         <label for="especie" class="form-label required-field">Especie</label>
                                         <select class="form-select" id="especie" required>
@@ -215,13 +215,13 @@
                                         </select>
                                     </div>
                                     
-                                    &lt;!-- Raza -->
+                                   <!-- Raza -->
                                     <div class="col-md-6">
                                         <label for="raza" class="form-label">Raza</label>
                                         <input type="text" class="form-control" id="raza">
                                     </div>
                                     
-                                    &lt;!-- Edad -->
+                                    <!-- Edad -->
                                     <div class="col-md-6">
                                         <label for="edad" class="form-label">Edad</label>
                                         <div class="input-group">
@@ -233,12 +233,12 @@
                                         </div>
                                     </div>
                                     
-                                    &lt;!-- Datos de la cita -->
+                                    <!-- Datos de la cita -->
                                     <div class="col-12 mt-4">
                                         <h3 class="h5 mb-3">Datos de la Cita</h3>
                                     </div>
                                     
-                                    &lt;!-- Tipo de servicio -->
+                                    <!-- Tipo de servicio -->
                                     <div class="col-md-6">
                                         <label for="servicio" class="form-label required-field">Tipo de servicio</label>
                                         <select class="form-select" id="servicio" required>
@@ -252,7 +252,7 @@
                                         </select>
                                     </div>
                                     
-                                    &lt;!-- Veterinario -->
+                                    <!-- Veterinario -->
                                     <div class="col-md-6">
                                         <label for="veterinario" class="form-label">Veterinario (opcional)</label>
                                         <select class="form-select" id="veterinario">
@@ -264,13 +264,13 @@
                                         </select>
                                     </div>
                                     
-                                    &lt;!-- Fecha -->
+                                    <!-- Fecha -->
                                     <div class="col-md-6">
                                         <label for="fecha" class="form-label required-field">Fecha</label>
                                         <input type="date" class="form-control" id="fecha" required>
                                     </div>
                                     
-                                    &lt;!-- Hora -->
+                                    <!-- Hora -->
                                     <div class="col-md-6">
                                         <label for="hora" class="form-label required-field">Hora</label>
                                         <select class="form-select" id="hora" required>
@@ -291,13 +291,13 @@
                                         </select>
                                     </div>
                                     
-                                    &lt;!-- Motivo de la consulta -->
+                                   <!-- Motivo de la consulta -->
                                     <div class="col-12">
                                         <label for="motivo" class="form-label">Motivo de la consulta o síntomas</label>
                                         <textarea class="form-control" id="motivo" rows="3"></textarea>
                                     </div>
                                     
-                                    &lt;!-- Primera visita -->
+                                    <!-- Primera visita -->
                                     <div class="col-12">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="primeraVisita">
@@ -307,7 +307,7 @@
                                         </div>
                                     </div>
                                     
-                                    &lt;!-- Términos y condiciones -->
+                                    <!-- Términos y condiciones -->
                                     <div class="col-12">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="terminos" required>
@@ -317,16 +317,16 @@
                                         </div>
                                     </div>
                                     
-                                    &lt;!-- Botón de envío -->
+                                    <!-- Botón de envío -->
                                     <div class="col-12 mt-4">
-                                        <button type="submit" class="btn btn-primary btn-lg">
+                                        <button type="submit" class="btn btn-dark btn-lg">
                                             <i class="fas fa-calendar-check me-2"></i>Confirmar Cita
                                         </button>
                                     </div>
                                 </div>
                             </form>
                             
-                            &lt;!-- Alerta para mensajes -->
+                            <!-- Alerta para mensajes -->
                             <div id="alertPlaceholder" class="mt-4"></div>
                         </div>
                     </div>
@@ -335,7 +335,7 @@
         </div>
     </section>
 
-    &lt;!-- Preguntas frecuentes -->
+    <!-- Preguntas frecuentes -->
     <section class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Preguntas Frecuentes sobre Citas</h2>
@@ -343,7 +343,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="accordion" id="accordionFAQ">
-                        &lt;!-- Pregunta 1 -->
+                        <!-- Pregunta 1 -->
                         <div class="accordion-item border-0 mb-3 shadow-sm">
                             <h3 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -357,7 +357,7 @@
                             </div>
                         </div>
                         
-                        &lt;!-- Pregunta 2 -->
+                       <!-- Pregunta 2 -->
                         <div class="accordion-item border-0 mb-3 shadow-sm">
                             <h3 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -371,7 +371,7 @@
                             </div>
                         </div>
                         
-                        &lt;!-- Pregunta 3 -->
+                        <!-- Pregunta 3 -->
                         <div class="accordion-item border-0 mb-3 shadow-sm">
                             <h3 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -390,7 +390,7 @@
         </div>
     </section>
 
-    &lt;!-- Footer -->
+    <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row g-4">
@@ -429,14 +429,14 @@
             </div>
             <hr class="my-4">
             <div class="text-center">
-                <p class="mb-0">&copy; 2023 Clínica Veterinaria PetCare. Todos los derechos reservados.</p>
+                <p class="mb-0">&copy; 2025 Clínica Veterinaria PetCare. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    &lt;!-- Bootstrap JS -->
+  <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    &lt;!-- Scripts personalizados -->
+    <!-- Scripts personalizados -->
     <script src="js/scripts.js"></script>
     <script src="js/validaciones.js"></script>
 </body>

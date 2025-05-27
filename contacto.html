@@ -13,51 +13,53 @@
 </head>
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-paw me-2"></i>PetCare
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Sistema
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="registro-mascota.html">Registro de Mascota</a></li>
-                            <li><a class="dropdown-item" href="historial-medico.html">Historial Médico</a></li>
-                            <li><a class="dropdown-item" href="inventario.html">Inventario</a></li>
-                            <li><a class="dropdown-item" href="pagos.html">Pagos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-outline-light btn-sm ms-lg-2 px-3" href="citas.html">Agendar Cita</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">
-                            <i class="fas fa-user me-1"></i>Iniciar Sesión
-                        </a>
-                    </li>
-                </ul>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <i class="fas fa-paw me-2"></i> <span>PetCare</span>
+                </a>
             </div>
-        </div>
-    </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sistema
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="registro-mascota.html">Registro de Mascota</a></li>
+                                <li><a class="dropdown-item" href="historial-medico.html">Historial Médico</a></li>
+                                <li><a class="dropdown-item" href="inventario.html">Inventario</a></li>
+                                <li><a class="dropdown-item" href="pagos.html">Pagos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-dark btn-sm ms-lg-2 px-3" href="citas.html">Agendar Cita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">
+                                <i class="fas fa-user me-1"></i>Iniciar Sesión
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
     <!-- Encabezado de página -->
     <header class="bg-light py-5">
@@ -68,16 +70,14 @@
                     <p class="lead">Estamos aquí para responder tus preguntas y atender a tus mascotas. ¡Contáctanos!</p>
                 </div>
                 <div class="col-lg-6">
-                    <div class="img-placeholder rounded shadow">
-                        <p class="text-center py-5">Imagen: Recepción de la clínica</p>
-                    </div>
+                    <img src="img/recepcion-clinica.jpg" alt="Recepción de la clínica veterinaria" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Información de contacto y formulario -->
-    <section class="py-5">
+    <section class="py-5 bg-light">
         <div class="container">
             <div class="row g-5">
                 <!-- Información de contacto -->
@@ -241,17 +241,19 @@
     </section>
 
     <!-- Mapa -->
-    <section class="py-5 bg-light">
-        <div class="container">
+    <section class="py-5 bg-light d-flex justify-content-center align-items-center">
+        <div class="container text-center">
             <h2 class="text-center mb-5">Nuestra Ubicación</h2>
-            <div class="img-placeholder rounded shadow" style="height: 400px;">
-                <p class="text-center py-5">Mapa de ubicación de la clínica</p>
-            </div>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+                width="600" height="250" style="border:0;" allowfullscreen="true" loading="lazy">
+            </iframe>
         </div>
     </section>
+    
 
     <!-- Preguntas frecuentes -->
-    <section class="py-5">
+    <section class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
             
@@ -358,7 +360,7 @@
             </div>
             <hr class="my-4">
             <div class="text-center">
-                <p class="mb-0">&copy; 2023 Clínica Veterinaria PetCare. Todos los derechos reservados.</p>
+                <p class="mb-0">&copy; 2025 Clínica Veterinaria PetCare. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
